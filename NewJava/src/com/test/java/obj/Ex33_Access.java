@@ -11,7 +11,7 @@ public class Ex33_Access {
     	3. protected
     	4. (default) */
 		
-		Book b1 = new Book();
+		Boook b1 = new Boook();
 		
 		b1.title = "자바 개발자";
 		b1.aaa(25000);
@@ -20,7 +20,7 @@ public class Ex33_Access {
 		System.out.println(b1.bbb());
 		
 		
-		Book b2 = new Book();
+		Boook b2 = new Boook();
 		
 		b2.title = "코딩 테스트 문제집";
 		//b2.price = 200000000;

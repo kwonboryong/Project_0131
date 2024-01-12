@@ -7,8 +7,6 @@ public class Monitor {
 	private int price;
 	//private int level;
 	
-	
-	
 	public String getModel() {
 		return model;
 	}
@@ -39,8 +37,15 @@ public class Monitor {
 			return 3;
 		}
 	}
+
+	@Override
+	public String toString() {
+		return "Monitor [model=" + model + ", size=" + size + ", price=" + price + "]";
+	}
 	
-	
+//	public String toString() {
+//		return String.format("%s[%,d원, %d인치]", this.model, this.price, this.size);
+//	}
 	
 
 }

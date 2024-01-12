@@ -1,6 +1,6 @@
 package com.test.java.obj;
 
-public class Book {
+public class Boook {
 	
 	/* 접근 지정자 가이드
     1. 멤버 변수는 무조건 private 사용
