@@ -1,4 +1,4 @@
-package com.test.java;
+package com.test.java.collection;
 
 public class Q104_MyArrayList {
 	

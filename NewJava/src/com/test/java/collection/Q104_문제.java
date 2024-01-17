@@ -1,4 +1,5 @@
-package com.test.java;
+package com.test.java.collection;
+
 
 public class Q104_문제 {
 	public static void main(String[] args) {
