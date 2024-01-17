@@ -117,10 +117,23 @@ class Cup {
 		this.size = size;
 	}
 	
-	
-	
 }
 
+
+
+class Mouse {
+	private int a;
+	private int b;
+	private static int c;
+// 객체의 멤버를 초기화하는 역할 (static이 안 붙은 멤버변수들)
+	public Mouse(int a, int b) {
+		super();
+		this.a = a;
+		this.b = b;
+	}
+
+
+}
 
 
 
