@@ -1,10 +1,10 @@
 package com.test.java;
 
-public class ex {
+public class Q104_문제 {
 	public static void main(String[] args) {
 		
 		//배열 생성
-		MyArrayList list = new MyArrayList();
+		Q104_MyArrayList list = new Q104_MyArrayList();
 	
 		//추가
 		list.add("홍길동");
@@ -48,16 +48,15 @@ public class ex {
 		}
 //	
 //		//검색
-//		if (list.indexOf("홍길동") > -1) {
-//		      System.out.println("홍길동 있음");
-//		} else {
-//		      System.out.println("홍길동 없음");
-//		}
-//	
+		if (list.indexOf("홍길동") > -1) {
+		      System.out.println("홍길동 있음");
+		} else {
+		      System.out.println("홍길동 없음");
+		}
+	
 //		//초기화
-//		list.clear();
-//		System.out.println(list.size());
-		
+		list.clear();
+		System.out.println(list.size());
 		
 	}
 	

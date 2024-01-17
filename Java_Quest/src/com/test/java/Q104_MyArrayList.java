@@ -1,11 +1,11 @@
 package com.test.java;
 
-public class MyArrayList {
+public class Q104_MyArrayList {
 	
 	private String[] list;
 	private int index;
 	
-	public MyArrayList() {
+	public Q104_MyArrayList() {
 		this.list = new String[4];
 		this.index = 0;
 	}
@@ -105,26 +105,39 @@ public class MyArrayList {
 	//1. 배열 길이 더블링
 	//2. Rigth Shift
 	//3. 값 삽입, 인덱스 증가
-	public void add(int i, String string) {
+	public void add(int index, String s) {
 		
+		if (checkLength()) {
+			doubleLength();
+		}
 		
+		for (int i = index; i < this.list.length-1; i++) {
+			this.list[i+1] = this.list[i];
+		}
 		
-		
+		this.list[index] = s;
+		this.index++;
 	}
 
-	
-	
-	
-	
-	
 	//검색---------------------------------
+	// 검색: 반복문으로 입력 문자열과 같은 index가 있는지 확인
 	
+	public int indexOf(String s) {
+		
+		for (int i = 0; i < this.list.length; i++) {
+			if (this.list[i].equals(s)) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	//초기화---------------------------------
 	
-	
-	
-	
-	
-	
+	public void clear() {
+		this.index = 0;
+	}
+
 	
 	//toString---------------------------------
 
@@ -139,13 +152,5 @@ public class MyArrayList {
 		}
 		return temp;
 	}
-
-	
-	
-
-	
-	
-	
-		
 
 }
