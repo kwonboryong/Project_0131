@@ -7,10 +7,10 @@ public class Q108_문제 {
 		MySet list = new MySet();
 
 		//추가
-//		list.add("홍길동");
-//		list.add("아무개");
-//		list.add("하하하");
-//
+		list.add("홍길동");
+		list.add("아무개");
+		list.add("하하하");
+
 //		//개수
 //		System.out.println(list.size());
 //
