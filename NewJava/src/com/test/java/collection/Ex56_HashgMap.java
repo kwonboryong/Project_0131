@@ -18,6 +18,8 @@ public class Ex56_HashgMap {
 		
 		
 	}
+	
+	
 
 	private static void m3() {
 
