@@ -8,7 +8,7 @@ public class Ex_practice {
 	public static void main(String[] args) {
 		
 		ArrayList<User> list = new ArrayList<User>();
-		
+
 		list.add(new User("홍길동", 1, 2023, 10, 31, "서울"));
 		list.add(new User("유길동", 5, 2021, 3, 14, "부산"));
 		list.add(new User("강감찬", 4, 2022, 11, 11, "인천"));
@@ -19,37 +19,15 @@ public class Ex_practice {
 		list.add(new User("김미미", 5, 2023, 12, 18, "제주"));
 		list.add(new User("독수리", 4, 2022, 9, 15, "광주"));
 		list.add(new User("텀블러", 3, 2020, 12, 26, "인천"));
-		
-		Collections.sort(list, new Comparator<User>() {
-			public int compare(User o1, User o2) {
-				if (o1.getLevel() > o2.getLevel()) {
-					return 1;
-				} else if (o1.getLevel() < o2.getLevel()) {
-					return -1;
-				} else {
-					return o1.getName().compareTo(o2.getName());
-				}
-				
-				
-				
-				
-				
-				
-			};
-		
-		
-		});
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	}
 
+		Collections.sort(list, new Comparator<User>() {
+		  public int compare(User o1, User o2) {
+			 return o1.getRegdate().compareTo(o2.getRegdate()); // 년도 정렬
+
+			}
+		});
+
+		System.out.println(list);
+
+	}
 }

@@ -13,6 +13,10 @@ public class User {
 		this.name = name;
 		this.level = level;
 		this.city = city;
+		
+		Calendar c = Calendar.getInstance();
+		c.set(year, month-1, date);
+		this.regdate = c;
 	}
 	
 	public String getName() {
