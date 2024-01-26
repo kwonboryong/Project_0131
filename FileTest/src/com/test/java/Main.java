@@ -9,18 +9,6 @@ import com.test.java.service.Service;
 public class Main {
 	public static void main(String[] args) {
 		
-//		try {
-//			String asciiArt1 = FigletFont.convertOneLine("Seoul  Metro");
-//			System.out.println(asciiArt1);
-//
-//			asciiArt1 = FigletFont.convertOneLine("figlet\\rectangles.flf", "hi");
-//			System.out.println(asciiArt1);
-//			
-//		} catch (Exception e) {
-//			System.out.println("Main.main");
-//			e.printStackTrace();
-//		}
-		
 		// 파일을 직접 입출력 관리(stream) → 매우 불편
 		// 성적 관리: score.txt 파일 내용 관리
 		// score.txt를 컬렉션으로 변환
